@@ -1,0 +1,25 @@
+        char  letter{};
+
+        cout << "What is the capital of France?\n";
+        string capital;
+        cin >> capital;
+        
+
+
+        if (capital == "Paris" || capital == "paris" || capital == "PARIS")
+        {
+            letter = 'p';
+        }
+
+        switch (letter) {
+
+        case 'p': {
+            cout << "You enter the correct answer" << endl;
+            break;
+        }
+
+        default: {
+            cout << "Sorry wrong answer";
+            break;
+        }
+        }
