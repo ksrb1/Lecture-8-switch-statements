@@ -1,0 +1,45 @@
+
+    
+    double temperatureInF{};
+    double temperatureInC{};
+    char letter{};
+
+    cout << "Type C if you want to conver Farenheit to Celcius\nType F if you want to convert Celcius to Farenheit" << endl;
+    cin >> letter;
+
+    switch (letter)
+    {
+    case 'c':
+    case 'C': {
+        cout << "What temperature do you want to convert from Celcius?" << endl;
+        cin >> temperatureInC;
+        if (cin.fail()) {
+
+        std::cin.clear();
+        std::cout << "Incorrect input\n ";
+    }else {
+        temperatureInF = ((temperatureInC / 0.556) + 32);
+        cout << temperatureInC << " Celcius would be " << temperatureInF << " in Farenheit" << endl;
+    }
+        break;
+    }
+    case'f':
+    case'F': {
+        cout << "What temperature do you want to convert from Farenheit?" << endl;
+        cin >> temperatureInF;
+        if (cin.fail()) {
+
+        std::cin.clear();
+        std::cout << "Incorrect input\n ";
+    }else {
+        temperatureInC = ((temperatureInF - 32) * 0.556);
+        cout << temperatureInF << " Farenheit would be " << temperatureInC << " in Celcius" << endl;
+    }
+        break;
+    }
+    default:
+    {
+        cout << "Invalid output" << endl;
+        break;
+    }
+    }
