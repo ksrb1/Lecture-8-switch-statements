@@ -1,0 +1,41 @@
+    char fuelType{};
+    double litre{};
+
+    cout << "How much litres of fuel do you need?" << endl;
+    cin >> litre;
+
+    if (cin.fail()) {
+        std::cin.clear();
+        std::cout << "Incorrect value\n ";
+    }
+    else if (litre > 0) {
+
+
+        cout << "what type of fuel do you need, 'd' for diesel and 'p' for gas" << endl;
+        cin >> fuelType;
+
+        switch (fuelType) {
+        case 'd':
+        case 'D': {
+            cout << "The current price for diesel is: 2.51 AED per litre " << endl;
+            cout << "Your total would be " << (litre * 2.51) << "AED" << endl;
+            break;
+        }
+        case 'p':
+        case 'P':
+        {
+            cout << "The current price for petrol is: 2.58 AED per litre" << endl;
+            cout << "Your total would be " << (litre * 2.58) << "AED" << endl;
+            break;
+        }
+
+        default: {
+            cout << "You have entered a wrong value" << endl;
+        }
+
+        }
+
+    }
+    else {
+        cout << "Oh you don't need fuel" << endl;
+    }
