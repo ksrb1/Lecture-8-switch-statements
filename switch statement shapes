@@ -1,0 +1,64 @@
+int side;
+    cout << "Enter the sides number to see the shape name (minimum 3 sides, maximum 10) \n";
+    cin >> side;
+
+    switch (side)
+    {
+    
+    case ( 3):
+    {
+    cout << "Triangle  has " << side << " sides" << endl;
+    break;
+    }
+    case(4):
+    {
+    cout << "Square | Rectangle has " << side << " sides" << endl;
+    break;
+    }
+    case( 5):
+    {
+    cout << "Pentagon has " << side << " sides" << endl;
+    break;
+    }
+    case(6):
+    {
+    cout << "Hexagon have " << side << " sides" << endl;
+    break;
+
+    }
+    case( 7):
+    {
+    cout << "Hepaton have " << side << " sides" << endl;
+    break;
+
+    }
+    case( 8):
+    {
+    cout << "Octagon have " << side << " sides" << endl;
+    break;
+
+    }
+
+    case ( 9):
+    {
+    cout << "Nonagon have " << side << " sides" << endl;
+    break;
+
+    }
+    case (10):
+    {
+    cout << "Decagon have " << side << " sides" << endl;
+    break;
+
+    }
+
+    default: {
+        cout << "Out of limitations or invalid" << endl;
+        break;
+    }
+
+        
+    }
+    
+    
+   
